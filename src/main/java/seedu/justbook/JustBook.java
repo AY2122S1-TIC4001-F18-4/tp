@@ -40,7 +40,7 @@ public class JustBook {
         try {
             onLoad();
         } catch (FileNotFoundException ex) {
-
+            System.out.println(ex.getMessage());
         }
         String logo = " ____        _        \n"
                 + "|  _ \\ _   _| | _____ \n"
