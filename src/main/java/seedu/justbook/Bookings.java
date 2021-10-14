@@ -32,8 +32,15 @@ public class Bookings {
         return String.format("%s %s - %s", bookDesc, start.toLocalTime(), end.toLocalTime());
     }
 
+    public LocalDateTime getEndDateTime() {
+        return end;
+    }
+
     public LocalDate getEndDate() {
         return end.toLocalDate();
     }
+
+    public String getBookDesc(){return bookDesc;}
+
 
 }
